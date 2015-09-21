@@ -128,7 +128,7 @@ var port = process.env.PORT || 3000;
 
 var server = http.createServer(app);
 server.listen(port, function () {
-  console.log('Listening on port ' + port + '.');
+  console.log('Listening on port:', port);
 });
 ```
 
@@ -138,7 +138,7 @@ We can also use chaining to shorten this up a bit.
 // server.js
 var server = http.createServer(app)
                  .listen(port, function () {
-                    console.log('Listening on port ' + port + '.');
+                    console.log('Listening on port:', port);
                   });
 ```
 
@@ -176,7 +176,7 @@ const port = process.env.PORT || 3000;
 
 const server = http.createServer(app)
                  .listen(port, function () {
-                    console.log('Listening on port ' + port + '.');
+                    console.log('Listening on port:', port);
                   });
 module.exports = server;
 ```
